@@ -138,6 +138,7 @@ def breadthFirstSearch(problem):
           newNode = Node(successor, leafNode)
           if newNode.state not in frontier.stateList and newNode.state not in explored:
               frontier.push(newNode)
+  print "No solution found"
   return []
 
 def uniformCostSearch(problem):
